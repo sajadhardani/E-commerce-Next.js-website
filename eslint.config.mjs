@@ -12,9 +12,10 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
-    // rules:{
-    //    'no-console': 'error'
-    // },
+    rules: {
+      '@typescript-eslint/no-explicit-any': 0,
+      '@typescript-eslint/no-unused-vars ': 0,
+    },
     ignores: [
       'node_modules/**',
       '.next/**',
