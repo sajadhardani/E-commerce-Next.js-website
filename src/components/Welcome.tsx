@@ -7,10 +7,10 @@ function Welcome() {
     <div className="flex flex-col justify-center items-center mt-6">
       <span>welcome to</span>
       <div className="flex items-center gap-3">
-        <h1 className="text-2xl font-bold text-gray-300">Digital Shop</h1>
+        <h1 className="text-2xl font-bold text-black">Digital Shop</h1>
       </div>
       <Button asChild className="mt-6">
-        <Link href="/product">Go to products</Link>
+        <Link href="/products">Go to products</Link>
       </Button>
     </div>
   );
