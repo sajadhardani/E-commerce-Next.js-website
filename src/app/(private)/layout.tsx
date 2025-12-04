@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function layout() {
-  return (
-    <div>
-      for private routes
-    </div>
-  )
+  return <div>for private routes</div>;
 }
 
-export default layout
+export default layout;
