@@ -19,8 +19,12 @@ const ProductItem = async (props: { product: any }) => {
     <Card className="w-[400px] transform transition-transform duration-300 hover:scale-105">
       <CardHeader>
         <div className="relative w-full h-[300px]">
-        <Image alt={product?.name} src={product?.image?.[0]?.image || '/assets/noImage.jpg'} fill 
-        className='rounded-t-lg object-center' />
+          <Image
+            alt={product?.name}
+            src={product?.image?.[0]?.image || '/assets/noImage.jpg'}
+            fill
+            className="rounded-t-lg object-cover"
+          />
         </div>
       </CardHeader>
       <CardContent>
@@ -28,9 +32,8 @@ const ProductItem = async (props: { product: any }) => {
         <p className="text-gray-500">{product?.category}</p>
         <div className="flex justify-between items-center">
           <p className="mt-4 text-lg font-semibold">
-            {/* ${product?.price?.toFixed(2)} */}
-            ${Number(product?.price || 0).toFixed(2)}
-
+            {/* ${product?.price?.toFixed(2)} */}$
+            {Number(product?.price || 0).toFixed(2)}
           </p>
           {/*  */}
           <div className="flex gap-2">

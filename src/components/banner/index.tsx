@@ -15,9 +15,9 @@ import IMG2 from './image/9.webp';
 import IMG3 from './image/23.webp';
 import Image from 'next/image';
 
- function Banner() {
+function Banner() {
   return (
-    <Carousel dir='ltr' className="w-full  ">
+    <Carousel dir="ltr" className="w-full  ">
       <CarouselContent>
         {[IMG1, IMG2, IMG3].map((image, index) => (
           <CarouselItem key={index}>

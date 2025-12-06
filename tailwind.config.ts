@@ -1,4 +1,3 @@
 export default {
-  content: ["./src/**/*.{ts,tsx,js,jsx}"],
-  
+  content: ['./src/**/*.{ts,tsx,js,jsx}'],
 };

@@ -23,7 +23,9 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+  ads: React.ReactNode;
 }>) {
+  const isAdmin = false;
   return (
     <html lang="fa">
       <body
@@ -43,7 +45,11 @@ export default function RootLayout({
             </div>
           </header>
           <div className="px-20 mt-15">{children}</div>
-          <footer className='bg-black w-full text-white flex items-center justify-center h-10'>
+          <div className="my-10 mx-auto flex justify-center">
+            {/* {ads} */}
+            {/* {isAdmin?ads:null} */}
+          </div>
+          <footer className="bg-black w-full text-white flex items-center justify-center h-10">
             <p>copy: 2025 shcv dev . Allrights reseved</p>
           </footer>
         </main>

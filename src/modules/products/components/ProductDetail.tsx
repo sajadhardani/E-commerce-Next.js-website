@@ -40,12 +40,12 @@ export default function ProductDetail(product: any) {
                 </div>
               )}
             </div>
-            <div className='flex flex-col justify-between'>
-              <p className='text-xl font-semibold '>
-                {/* ${product?.price?.toFixed(2)} */}
-                 ${Number(product?.price || 0).toFixed(2)}
+            <div className="flex flex-col justify-between">
+              <p className="text-xl font-semibold ">
+                {/* ${product?.price?.toFixed(2)} */}$
+                {Number(product?.price || 0).toFixed(2)}
               </p>
-              <button className='my-4'>
+              <button className="my-4">
                 <ShoppingCart />
               </button>
               <Button variant="secondary" asChild>
