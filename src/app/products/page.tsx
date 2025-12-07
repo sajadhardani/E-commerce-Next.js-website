@@ -1,18 +1,15 @@
-
-
 import { prisma } from '@/lib/prisma';
 import ProductListView from '@/modules/products/views/ProductListView';
 
 import React from 'react';
 
 async function Products() {
- const data = await prisma.product.findMany()
- console.log(data)
+  const data = await prisma.product.findMany();
+  console.log(data);
 
-
-//  async function Products() {
-//   const data:PrismaType.Product[] = await prisma.product.findMany();
-//   console.log(data);
+  //  async function Products() {
+  //   const data:PrismaType.Product[] = await prisma.product.findMany();
+  //   console.log(data);
 
   return (
     <div>
