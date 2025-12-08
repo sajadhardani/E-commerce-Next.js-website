@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  
+}
+
+enum ProductCategory {
+  MOBILE
+  LAPTOP
+  WATCH
+  OTHERS
+}
+
+model Product {
+  id          String @id @default(uuid())
+  name        String
+  category    ProductCategory
+  description String?
+  price       Float? @default(0.0)
+  quantity    Int?   @default(0)
+  Image     Image[]
+}
+
+
+// model Image {
+//   id String @id @default(uuid())
+//   image String 
+//   Product Product? @relation(fields: [productId], references: [id])
+//   productId String?
+// }
+
+model Image {
+  id        String   @id @default(uuid())
+  image     String
+  productId String?
+  Product   Product? @relation(fields: [productId], references: [id])
+}
+// 1- generate
+//  2 -migrate
+

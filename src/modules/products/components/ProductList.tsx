@@ -1,6 +1,8 @@
 import React from 'react';
 import { DATA } from '../mock/products';
 import ProductItem from './ProductItem';
+import {PrismaType} from '@/lib/prisma'
+// prismaType 
 function ProductList() {
   return (
     <div className="flex flex-wrap justify-between items-center w-full my-10">

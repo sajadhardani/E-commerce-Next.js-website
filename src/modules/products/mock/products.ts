@@ -5,8 +5,7 @@ export const DATA = [
     category: 'Mobile',
     price: '1200',
     quantity: '10',
-    image: [{ image: '/mock/1.webp' },
-       { image: '/mock/9.webp' }],
+    image: [{ image: '/mock/1.webp' }, { image: '/mock/9.webp' }],
   },
   {
     id: 2,
