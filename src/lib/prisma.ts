@@ -2,8 +2,10 @@
 
 import { PrismaClient } from '@/generated/prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
-import type * as PrismaType from '@prisma/client';
-// import type * as Prisma from '@prisma/client';
+// import type * as PrismaType from '@prisma/client';
+import type * as PrismaType from '@/generated/prisma/client';
+
+
 
 // adapter
 const adapter = new PrismaPg({

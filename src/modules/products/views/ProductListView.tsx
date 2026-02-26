@@ -7,7 +7,7 @@ async function ProductListView() {
   const product = await getProducts()
   return (
     <div>
-      {/* <ProductList products ={product} /> */}
+      <ProductList products ={product} />
     </div>
   );
 }
